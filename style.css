@@ -1,0 +1,1272 @@
+:root {
+  --primary: #f7edc9;
+  --background: rgb(255, 249, 225);
+  --linear-color: linear-gradient(
+    90deg,
+    rgba(255, 249, 225, 1) 0%,
+    rgba(247, 237, 201, 1) 35%
+  );
+  --box-background: linear-gradient(
+    311deg,
+    rgba(18, 18, 18, 0.8323704481792717) 0%,
+    rgba(18, 18, 18, 1) 100%
+  );
+  --secondary-color: #989898;
+  --contact-color: rgba(252, 250, 246, 0.63);
+}
+
+/* root elements */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+
+body {
+  background-color: black;
+  padding: 2rem 5rem;
+  max-width: 2000px;
+  
+}
+
+.contain {
+  max-width: 2000px;
+}
+
+/* general code  */
+.font1 {
+  font-size: 2rem;
+}
+
+#unshown {
+  display: none;
+}
+
+/*xxxxxxxxx general code XXXXXXX */
+/* nav code  */
+.logo {
+  padding: 0 5rem;
+}
+.nav-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 1rem;
+}
+
+.nav-items li a span {
+  background-color: var(--primary);
+  color: black;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.dots {
+  display: none;
+}
+/*xxxxxxxxx nav code XXXXXXX */
+
+/* hero section code  */
+.hero-section {
+  position: relative;
+  margin-top: 3rem;
+  background-image: var(--linear-color);
+  padding: 7rem 5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.three-star {
+  position: absolute;
+  top: 70px;
+  left: 5px;
+  height: 100px;
+}
+
+.hero-left h1,
+.hero-left p {
+  color: black;
+}
+
+.hero-left h1 {
+  font-size: 4rem;
+}
+
+.hero-left p {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 1.5rem;
+}
+
+.hero-left p span {
+  color: black;
+  font-weight: 600;
+}
+
+.hero-right img {
+  max-width: 40rem;
+}
+
+.btn-section {
+  margin-top: 3rem;
+}
+
+.btn-section > img {
+  position: relative;
+  top: -35px;
+}
+
+.btns {
+  background-color: black;
+  font-weight: 500;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.btns img {
+  height: 25px;
+  width: 25px;
+  margin-right: 0.5rem;
+}
+/*xxxxxxxxx hero section code XXXXXXX */
+
+/* about us code  */
+.about-us {
+  position: relative;
+  height: 100vh;
+  padding: 7rem 5rem;
+  margin-bottom: 5rem;
+}
+
+.about-us img {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+}
+.about-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 5rem;
+}
+
+.about-title span {
+  font-weight: 600;
+}
+
+.about-sub-title {
+  text-align: center;
+  margin-top: 3.5rem;
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+.box-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  /* flex-wrap: nowrap; */
+  margin-top: 3.5rem;
+}
+
+.box {
+  padding: 2rem 3rem;
+  margin-right: 1.5rem;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 1.5rem;
+  background-image: var(--box-background);
+}
+
+.box .title {
+  margin-top: 5rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.box .title span {
+  color: var(--primary);
+}
+
+.box .sub-title {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+
+.actived {
+  background-image: var(--linear-color);
+  box-shadow: 0 0 90px 8px #f7edc95e;
+}
+
+.box.actived .title {
+  color: black;
+}
+
+.box.actived .sub-title {
+  color: #884834;
+}
+/*xxxxxxxxxxxx about us code  xxxxxxxxxxxxxxxxxxxx*/
+
+/* Our venture code  */
+.our-ventures {
+  height: 90vh;
+}
+
+.venture-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 17rem;
+}
+
+.wrapper-box {
+  display: flex;
+  justify-content: center;
+  /* align-items: space-around; */
+  margin-top: 10rem;
+  /* gap: 3rem; */
+}
+
+.our-ventures img {
+  height: 100px;
+}
+
+.wrapper-box .box,
+.ventures-title,
+.info {
+  text-align: left;
+  color: var(--primary);
+}
+
+.since {
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.ventures-title {
+  font-size: 4rem;
+  color: var(--primary);
+  margin-top: 1rem;
+  line-height: 1.2;
+}
+
+.info {
+  position: relative;
+  margin-top: 1rem;
+  border-top: 1px solid var(--primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info i {
+  color: var(--primary);
+}
+.info h2 {
+  font-size: 1.2em;
+  color: var(--primary);
+  margin-top: 1rem;
+  font-weight: 400;
+}
+/*xxxxxxxxxxxxxxx Our venture code xxxxxxxxxxxxxxxxxxx  */
+
+/* achivement code  */
+.achivement {
+  position: relative;
+  height: 70vh;
+  padding: 0 7rem;
+  /* text-align: center; */
+}
+
+.achivement img {
+  position: absolute;
+  top: -10;
+  right: 0;
+}
+
+.achi-wrapper {
+  background-color: var(--primary);
+  color: black;
+  border-radius: 1.5rem;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+  /* max-width: 1500px; */
+}
+
+.top-title {
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  /* font-size: clamp(1.3rem, 6vw + 1rem, 3rem); */
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  gap: 15rem;
+}
+
+.bottom-box p {
+  text-align: center;
+  color: #727272;
+  /* font-size: 3rem; */
+  font-size: clamp(1rem, 5vw + 1rem, 3rem);
+  font-weight: 500;
+}
+
+.bottom-box h3 {
+  color: #595959;
+  /* font-size: clamp(1.3rem, 8vw + 1rem, 5rem); */
+  font-size:5rem;
+  margin-top: 2rem;
+}
+/*xxxxxxxxxxxxxxxx achivement code xxxxxxxxxxxxxxxxxxxxxx */
+
+/* contact code  */
+.contact {
+  position: relative;
+  height: 70vh;
+  padding: 0 7rem;
+}
+
+.contact img {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.contact-wrapper {
+  background-image: var(--box-background);
+  padding: 5rem 3rem;
+  text-align: center;
+  border-radius: 1.5rem;
+  margin-top: 10rem;
+}
+
+.contact-title {
+  font-size: 8rem;
+  margin-top: 2rem;
+  color: var(--primary);
+}
+
+.contact-sub-title {
+  color: var(--primary);
+  margin-top: 5rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 7rem;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  color: var(--contact-color);
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: var(--contact-color);
+}
+
+/*xxxxxxxxxxxxx contact code xxxxxxxxxxxxxxxxxxxxx */
+/* above 2000 */
+@media only screen and (min-width: 2000px){
+    html{
+        display: flex ; 
+        justify-content: center;
+    }
+}
+
+/* under 1500  */
+@media only screen and (max-width: 1500px) {
+  .hero-section {
+    flex-direction: column;
+    margin-top: 3rem;
+    padding: 3rem 2rem;
+  }
+
+  .hero-right img {
+    margin-top: 3rem;
+    max-width: 500px;
+    height: auto;
+    object-fit: scale-down;
+  }
+
+  .btn-section {
+    position: relative;
+    text-align: center;
+  }
+  .btn-section > img {
+    position: absolute;
+    height: 3.5rem;
+  }
+
+  .btns {
+    text-align: center;
+  }
+
+  .achivement {
+    padding: 0 0rem;
+  }
+
+  .contact {
+    padding: 0 0rem;
+  }
+}
+/*xxxxxxxxxxxx under 1500  xxxxxxxxxxx*/
+
+/* under 1300 */
+@media only screen and (max-width: 1300px) {
+  .about-us img {
+    top: 0;
+    right: 0;
+  }
+
+  .achivement img {
+    top: -10rem;
+  }
+
+  .bottom{
+    gap: 7rem;
+  }
+}
+/*xxxxxxxxxx under 1300 xxxxxxxxxx*/
+
+/* under 1200 */
+@media only screen and (max-width: 1200px) {
+    .three-star{
+      top: 0;
+      left: 0;
+    }
+
+    .hero-left h1{
+        text-align: center;
+    } 
+
+    .hero-left p {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+  .top-title {
+    font-size: 2.5rem;
+  }
+
+
+  .dots button {
+    padding: 2rem;
+    background-color: black;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .lines {
+    background-color: white;
+    height: 1px;
+    width: 15px;
+  }
+
+  .bottom{
+    gap: 5rem;
+  }
+}
+/*xxxxxxxxx under 1200 xxxxxxxxx*/
+
+/* under 1100 */
+@media only screen and (max-width:1100px){
+    .nav-items{
+        display: none;
+    }
+    
+    .dots{
+        display: block;
+    }
+}
+
+/* under 1000 */
+@media only screen and (max-width:1000px){
+    .hero-left h1 {
+        font-size: 3.4rem;
+    }   
+
+    .hero-left p {
+        font-size: 1.7rem;
+    }
+
+    .top-title {
+        font-size: 2rem;
+    }
+
+    .contact img {
+        position: absolute;
+        top: 1rem;
+        left: 2rem;
+        height: 5rem;
+    }
+}
+
+/*xxxxxxx under 900 xxxxxxxx*/
+@media only screen and (max-width:900px){
+    .hero-left h1 {
+        font-size: 3rem;
+    }   
+
+    .hero-left p {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .about-title {
+        font-size: 1.5rem;
+    }
+
+    .about-sub-title {
+        font-size: .9rem;
+    }
+
+    .box-wrapper {
+        gap: 3rem;
+    }
+
+    .box .title {
+        font-weight: 600;
+        font-size: 2.5;
+    }
+
+    .box .sub-title {
+        font-size: 1rem;
+    }
+
+    .achi-wrapper{
+        margin-top: 10rem;
+    }
+
+    .achi-wrapper img{
+        height: 100px;
+    }
+
+    .bottom-box h3 {
+        font-size: 3.3rem;
+    }   
+
+    .bottom-box p {
+        font-size: 2rem;
+    }
+
+    .contact-info h2 {
+        font-size: 1rem;
+    }
+
+    .contact-info p {
+        margin-top: 1rem;
+    }
+}
+
+/*xxxxxxx under 900 xxxxxxxx*/
+/*under 800 */
+@media only screen and (max-width:800px){
+    .logo {
+        padding: 0 2rem;
+    }
+
+    .achi-wrapper {
+        padding: 5rem 3rem;
+    }
+
+    .hero-left h1 {
+        font-size: 2rem;
+    }
+
+    .hero-left p {
+        font-size: 1.3rem;
+    }
+
+    .top-title {
+        font-size: 1.5rem;
+    }
+
+    .bottom-box p {
+        font-size: 1.5rem;
+    }
+
+    .contact-title {
+        font-size: 7rem;
+    }
+
+    .contact-sub-title {
+        font-size: 1.3rem;
+    }
+
+    
+    .ventures-title {
+        font-size: 3rem;   
+    }
+
+    .box-wrapper {
+        gap: 2rem;
+    }
+
+    .about-sub-title {
+        font-size: .7rem;
+    }
+
+    .box .title {
+        font-size: 1.5rem;
+    }
+
+    .contact-info{
+        overflow: scroll;
+    }
+}
+
+/*xxxxxxx under 900 xxxxxxxx*/
+
+/* under 700 */
+@media only screen and (max-width:700px){
+    .hero-left h1{
+        font-size: 2.2rem;
+        margin-top: 2rem;
+    }
+
+    .hero-left p {
+        font-size: 1.1rem;
+    }
+
+    .box-wrapper {
+        gap: 0;
+    }
+
+    .venture-title {
+        font-size: 2.7rem;
+    }
+
+    .ventures-title {
+        font-size: 2rem;
+    }
+
+    .since {
+        font-size: 1rem;
+    }
+
+    .info h2{
+        font-size: 1rem;
+    }
+
+    .top-title {
+        font-size: 1.2rem;
+    }
+
+    .bottom-box h3 {
+        font-size: 3rem;
+    }
+
+    .contact-title {
+        font-size: 6rem;
+    }
+
+    .contact-info {
+        overflow: scroll;
+    }
+}
+/*xxxxxxxx under 700 xxxxxxxxxxx*/
+/* under 73000 */
+@media only screen and (max-width:730px){
+    #unshown{
+        display: block;
+    }
+
+    #disable{
+        display: none;
+    }
+
+    .hero-left p {
+        font-size: 1.1rem;
+    }
+
+    .about-title {
+        font-size: 1.3rem;
+    }
+
+    .about-sub-title {
+        font-size: .6rem;
+    }
+
+    .venture-title {
+        font-size: 2.6rem;
+    }
+
+    .wrapper-box {
+        overflow: scroll;
+    }
+
+    .wrapper-box .box{
+        position: relative;
+        left: 5rem;
+    }
+
+    .contact-title {
+        font-size: 6rem;
+    }
+
+
+}
+/*xxxxxxxx under 730 xxxxxxxxxxx*/
+/* under 600 */
+@media only screen and (max-width:600px){
+    body{
+        padding: 2rem ;
+    }
+
+    #unshown {
+        display: block;
+      }
+
+      #disable{
+          display: none;
+        }
+        
+        .hero-left p {
+            font-size: 1rem;
+        }
+        
+        
+        .about-title {
+            font-size: 1.1rem;
+        }
+        
+        .about-sub-title {
+            font-size: .5rem;
+        }
+        
+        
+        
+        .box-wrapper {
+            gap: 0rem;
+        }
+        
+        .ventures-title {
+        font-size: 1.8rem;
+    }
+
+    .since {
+        color: var(--primary);
+    }
+    
+    
+    .info h2 {
+        font-size: .8rem;   
+    }
+    
+    .top-title {
+        font-size: 1.2rem;
+    }
+    
+    .bottom {
+        gap: 4rem;
+    }
+    
+    
+    .contact-title {
+        font-size: 5rem;
+    }
+    
+    .contact-sub-title {
+        font-size: .9rem;
+    }
+    
+    .contact-info {
+        overflow: scroll;
+    }
+}
+/*xxxxxxxx under 600 xxxxxxxxxxx*/
+
+
+/* under 660  */
+@media only screen and (max-width:660px){
+    #unshown{
+        display: block;
+    }
+    
+    #disable{
+        display: none;
+    }
+    
+    .hero-left p {
+        font-size: 1rem;
+    }
+
+    .hero-right img {
+        max-width: 400px;
+    }
+
+    .about-us img {
+        height: 120px;
+        top: 1rem;
+    }
+
+    .venture-title {
+        font-size: 2.5rem;
+    }
+
+    .venture-title {
+        margin-top: 21rem;
+    }
+
+    .about-title {
+        font-size: 1.1rem;
+    }
+
+    .about-sub-title {
+        font-size: .5rem;
+    }
+
+    .bottom {
+        gap: 3.5rem;
+    }
+
+    .top-title {
+        font-size: 1.1rem;
+    }
+
+    .contact-title {
+        font-size: 5rem;
+    }
+}
+/*xxxxxxxxxx under 660 xxxxxxxxxxxxxxx */
+
+/* under 500  */
+@media only screen and (max-width:500px){
+    .hero-right img {
+        max-width: 380px;
+    }
+
+    .about-us img {
+        height: 100px;
+    }
+
+    .about-title {
+        font-size: .9rem;
+    }
+
+    .about-sub-title {
+        font-size: .4rem;
+    }
+
+    .venture-title {
+        margin-top: 27rem;
+    }
+
+    .wrapper-box{
+        overflow: scroll;
+    }
+
+    .wrapper-box .box{
+        position: relative;
+        left: 6rem;
+    }
+
+    .bottom-box p {
+        font-size: 1rem;
+    }
+
+    .bottom-box h3 {
+        font-size: 2rem;
+    }
+
+    .contact {
+        height: 79vh;
+    }
+}
+/*xxxxxxxxxxxx under 500  xxxxxxxxxxx*/
+
+@media only screen and (max-width: 560px){
+    .hero-left p {
+        font-size: .8rem;
+    }
+
+    .hero-right img {
+        max-width: 440px;
+    }
+
+.wrapper-box {
+    overflow: scroll;
+}
+
+.wrapper-box .box{
+    position: relative;
+    left: 6rem;
+}
+
+.bottom {
+    gap: 3rem;
+}
+
+.bottom-box p {
+    font-size: 1.4rem;
+}
+
+.bottom-box h3 {
+    font-size: 2.8rem;
+}
+
+
+}
+
+/* mediaquery under 480 width  */
+@media only screen and (max-width: 480px) {
+  /* general  */
+  #disable {
+    display: none;
+  }
+
+  #unshown {
+    display: block;
+  }
+
+  /* nav section */
+  body {
+    padding: 0.5rem 1rem;
+  }
+  .font1 {
+    font-size: 5vw;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    padding: 1rem 0.5rem;
+  }
+  .nav-items {
+    display: none;
+  }
+
+  .dots {
+    display: block;
+  }
+
+  .dots button {
+    padding: 2rem;
+    background-color: black;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .lines {
+    background-color: white;
+    height: 1px;
+    width: 15px;
+  }
+  /*xxxxxxxxxxx nav section xxxxxxxxxxxxxxxxx */
+
+  /* hero-section */
+  .hero-section {
+    flex-direction: column;
+    margin-top: 3rem;
+    padding: 3rem 2rem;
+  }
+
+  .three-star {
+    height: 5rem;
+    top: 0.5rem;
+  }
+  .hero-right img {
+    margin-top: 3rem;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero-section {
+    padding: 2rem 2rem;
+  }
+
+  .hero-left h1 {
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .hero-left p {
+    font-size: 2.5vw;
+  }
+
+  .btns {
+    background-color: black;
+    color: var(--primary);
+    font-weight: 400;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+
+  .btns img {
+    height: 15px;
+    width: 15px;
+    margin-right: 0.5rem;
+  }
+
+  .btn-section {
+    position: relative;
+    text-align: center;
+  }
+  .btn-section > img {
+    position: absolute;
+    height: 3rem;
+  }
+  /*xxxxxxxxxxxx hero-section xxxxxxxxxxxxxxxxxxxx*/
+
+  /* about us section  */
+  .about-us {
+    padding: 1.5rem 0.1rem;
+  }
+
+  .about-us img {
+    height: 5rem;
+    top: 2rem;
+    right: 1rem;
+  }
+  .about-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .about-title span {
+    font-weight: 800;
+  }
+
+  .about-sub-title {
+    font-size: 0.4rem;
+    margin-top: 1.4rem;
+  }
+
+  .rows {
+    padding: 2rem 3rem;
+    margin-top: 5rem;
+  }
+
+  .box-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0;
+    /* justify-content: space-between; */
+  }
+
+  .box {
+    padding: 2rem 1rem;
+    /* max-width: 300px; */
+    margin: 0;
+  }
+
+  .box .title {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+  }
+
+  .box .title span {
+    display: none;
+  }
+
+  .box .sub-title {
+    font-size: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  /*xxxxxxxxxxxxxx about us section  xxxxxxxxxxxxx*/
+  /* our ventures  */
+  .venture-title {
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .wrapper-box {
+    position: relative;
+    gap: 3rem;
+    overflow-x: scroll;
+  }
+
+  .our-ventures img {
+    position: absolute;
+    top: 5rem;
+    left: 0.2rem;
+  }
+
+  .wrapper-box .box {
+    position: relative;
+    left: 8rem;
+    min-width: 10rem;
+  }
+
+  .since {
+    font-size: 0.9rem;
+  }
+
+  .ventures-title {
+    font-size: 1.5rem;
+  }
+
+  .info h2 {
+    font-size: 0.5rem;
+  }
+
+  /*xxxxxxxxxxxxxx our ventures  xxxxxxxxxxxxxxxxx*/
+  /* achivement  */
+  .achivement {
+    padding: 0 0rem;
+  }
+
+  .achivement img {
+    top: -8rem;
+    height: 5rem;
+  }
+
+  .achi-wrapper {
+    margin-top: 2rem;
+  }
+
+  .top-title {
+    font-size: 1.3rem;
+  }
+
+  .bottom {
+    margin-top: 10rem;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .bottom-box {
+    text-align: center;
+  }
+
+  .bottom-box p {
+    font-size: 1rem;
+  }
+
+  .bottom-box h3 {
+    font-size: 1.5rem;
+  }
+
+  /*xxxxxxxxxxx achivement xxxxxxxxxxxxxxxx  */
+
+  /* contact section  */
+  .contact {
+    padding: 0rem;
+  }
+
+  .contact img {
+    top: 0rem;
+    right: 0.1rem;
+    height: 5rem;
+  }
+
+  .contact-wrapper {
+    text-align: center;
+  }
+
+  .contact-title {
+    font-size: 4rem;
+  }
+
+  .contact-info {
+    overflow: scroll;
+  }
+
+  .contact-info h2 {
+    font-size: 1rem;
+  }
+
+  .contact-info p {
+    font-size: 0.5rem;
+  }
+  /*xxxxxxxxxxx contact section  xxxxxxxxxxxxx*/
+}
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxx mediaquery under 480 width xxxxxxxxxxxxxxxxxxxxx */
+
+/* under 400 width  */
+@media only screen and (max-width: 400px){
+    .our-ventures {
+        position: relative;
+    }
+
+    .contact-title {
+        font-size: 3rem;
+    }
+}
+/*xxxxxxxxxxxx under 400 width xxxxxxxxxxxx */
+
+
+
+/* under 300 width  */
+@media only screen and (max-width: 300px){
+    .our-ventures {
+        height: 65vh;
+    }
+
+    .venture-title {
+        font-size: 1.3rem;
+    }
+
+    .achivement {
+        height: 38vh;
+    }
+
+    .wrapper-box .box{
+        left: 10rem;
+    }
+
+    .achi-wrapper {
+        padding: 3rem;
+    }
+
+    .bottom{
+        gap: 2rem;
+    }
+
+
+    .bottom-box p {
+        font-size: .7rem;
+        font-weight: 400;
+    }
+
+    .top-title {
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+    
+    .contact {
+        height: 80vh;
+    }
+
+    .contact-wrapper {
+        padding: 1rem 1rem;
+    }
+
+    .contact-sub-title {
+        font-size: .6rem;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+}
+/*xxxxxxxxxxx under 300 width xxxxxxxxxxxxx */
