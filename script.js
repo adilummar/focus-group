@@ -7,5 +7,5 @@ function redirectToFocusMart(){
 }
 
 function redirectToPopIce(){
-    window.location.href =  'focusmart.html';
+    window.location.href =  'popice.html';
 }

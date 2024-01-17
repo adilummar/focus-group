@@ -634,6 +634,11 @@ body {
     .contact-info{
         overflow: scroll;
     }
+
+    .info-box{
+        position: relative;
+        left: 6rem;
+    }
 }
 
 /*xxxxxxx under 900 xxxxxxxx*/
@@ -683,6 +688,11 @@ body {
 
     .contact-info {
         overflow: scroll;
+    }
+
+    .info-box{
+        position: relative;
+        left: 8rem;
     }
 }
 /*xxxxxxxx under 700 xxxxxxxxxxx*/
@@ -847,6 +857,11 @@ body {
 
     .contact-title {
         font-size: 5rem;
+    }
+
+    .info-box{
+        position: relative;
+        left: 9rem;
     }
 }
 /*xxxxxxxxxx under 660 xxxxxxxxxxxxxxx */
@@ -1198,6 +1213,11 @@ body {
   .contact-info p {
     font-size: 0.5rem;
   }
+
+  .info-box{
+    position: relative;
+    left: 5rem;
+}
   /*xxxxxxxxxxx contact section  xxxxxxxxxxxxx*/
 }
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxx mediaquery under 480 width xxxxxxxxxxxxxxxxxxxxx */
@@ -1210,6 +1230,11 @@ body {
 
     .contact-title {
         font-size: 3rem;
+    }
+
+    .info-box{
+        position: relative;
+        left: 6rem;
     }
 }
 /*xxxxxxxxxxxx under 400 width xxxxxxxxxxxx */
